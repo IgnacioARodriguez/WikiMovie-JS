@@ -1,0 +1,72 @@
+{
+  "name": "25-omdb",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@headlessui/react": "^1.4.1",
+    "@heroicons/react": "^1.0.4",
+    "@reduxjs/toolkit": "^1.5.0",
+    "antd": "^4.16.13",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^5.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "react": "^17.0.1",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.1",
+    "react-scripts": "4.0.3",
+    "react-toastify": "^4.1.0",
+    "reactjs-popup": "^2.0.5",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "sequelize": "^6.5.0"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run server' 'npm run client'",
+    "server": "nodemon api/server.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "seed": "node api/seed"
+  },
+  "proxy": "http://localhost:3001",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "postcss": "^7.0.36",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9"
+  }
+}
